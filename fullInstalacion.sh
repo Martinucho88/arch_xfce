@@ -40,7 +40,16 @@ sudo pacman -S --noconfirm \
 	imagemagick \
 	lightdm-gtk-greeter-settings \
 	plank \
-	btop
+	btop \
+	nvidia-open \
+	nvidia-utils \
+	noto-fonts \
+	noto-fonts-cjk \
+	noto-fonts-emoji \
+	
+
+
+fc-cache -fv
 
 echo -e "\033[35m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\033[0m"
 set -e
