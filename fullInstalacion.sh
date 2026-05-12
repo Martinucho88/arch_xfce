@@ -179,7 +179,7 @@ systemctl --user start pipewire pipewire-pulse wireplumber
 
 echo -e "\e[1;30;47mAgregando tema de plank...\e[0m"
 unzip arian-plank-theme-light.zip
-sudo mv /Arian\ Theme\ Light /usr/share/plank/themes/
+sudo mv Arian\ Theme\ Light /usr/share/plank/themes/
 
 echo "DESCOMPRIMIENDO ARCHIVOS"
 tar -xvf macOS.tar.xz
