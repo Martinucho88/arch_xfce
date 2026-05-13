@@ -210,5 +210,8 @@ sudo mv dock1 ~/.config/plank/
 
 
 xfconf-query -c xfce4-keyboard-shortcuts -p / -r -R
-
+pkill xfconfd
+rm ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
 cp xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+
+xfconfd --replace &
