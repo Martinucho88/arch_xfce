@@ -4,6 +4,8 @@
 echo -e "\e[1;30;47m->Actualizando el sistema<-\e[0m"
 sudo pacman -Syu --noconfirm
 
+SCRIPT_DIR="$(pwd)"
+
 Instalacion de paquetes basicos
 echo -e "\e[1;30;47mInstalacion de paquetes basicos...\e[0m"
 sudo pacman -S --noconfirm \
@@ -105,6 +107,8 @@ echo -e "\033[35m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\033[0m"
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm
+
+cd "$SCRIPT_DIR"
 
 #Instalacion de paquetes yay
 echo -e "\e[1;30;47mInstalacion de paquetes de AUR...\e[0m"
