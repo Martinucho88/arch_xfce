@@ -203,3 +203,8 @@ echo -e "\e[1;30;47mBorrando configuracion antigua de plank...\e[0m"
 sudo rm -rf ~/.config/plank/*
 echo -e "\e[1;30;47mCambiando dock de plank...\e[0m"
 sudo mv dock1 ~/.config/plank/
+
+
+xfconf-query -c xfce4-keyboard-shortcuts -p / -r -R
+
+cp xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
