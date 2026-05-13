@@ -48,7 +48,7 @@ sudo pacman -S --noconfirm \
 	noto-fonts \
 	noto-fonts-cjk \
 	noto-fonts-emoji \
-	
+	ghostty	
 
 
 fc-cache -fv
